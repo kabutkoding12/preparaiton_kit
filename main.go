@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"github.com/kabutkoding12/preparaiton_kit/plusminus"
 	"github.com/kabutkoding12/preparaiton_kit/minmaxsum"
+	"github.com/kabutkoding12/preparaiton_kit/time_conversion"
+	"github.com/kabutkoding12/preparaiton_kit/lonly_integer"
 )
 
 func main () {
@@ -16,6 +18,13 @@ func main () {
 	minmaxsum.MiniMaxSum(arr1)
 
 
-	fmt.Println("=== tess ======")
+	fmt.Println("=== time conversion ======")
+	s := "07:15:45AM"
+	fmt.Println(time_conversion.TimeConversion(s))
+
+	fmt.Println("=== lonly integer ======")
+	arrInteger := []int32{1,2,3,4,3,2,1}
+	fmt.Println( lonly_integer.LonlyInteger(arrInteger) )
+
 
 }

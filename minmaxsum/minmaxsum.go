@@ -19,12 +19,12 @@ func MiniMaxSum(arr []int) {
 
 	for i:=0; i<len(arr); i++ {
 
-		// if sumValue - arr[i] <= min || min == 0 {
-		// 	min = sumValue - arr[i]
-		// }
-		// if sumValue - arr[i] > max || max == 0 {
-		// 	max = sumValue - arr[i]
-		// }
+		if sumValue - arr[i] <= min || min == 0 {
+			min = sumValue - arr[i]
+		}
+		if sumValue - arr[i] > max || max == 0 {
+			max = sumValue - arr[i]
+		}
 	}
 
 	fmt.Printf("%d %d \n", min, max)
